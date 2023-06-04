@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        let imgElement, broqch;
+        let br = 0, brSila = 1;
+        // Искаме тази функция да се извика, когато се зареди HTML уеб страницата
+        function onBodyLoad() {
+            // Зареждаме HTML елементи с определени id-та в променливи
+            imgElement = document.getElementById("cookiekartinka");
+            broqchElement = document.getElementById("broqch1");
+            silaButon = document.getElementById("sila_buton");
+            silaBroqch = document.getElementById("sila_broqch");
+            silaImages = document.getElementById("sila_images");
+            // При клик върху imgElement - извикай функцията onCookieClick
+            imgElement.onclick = onCookieClick;
+            silaButon.onclick = onSilaKlik;
+            
+        }
+        function onCookieClick() {
+            br = br + brSila;
+            console.log("COOKIE CLICKED");
+            // Промени HTML-a, който се намира вътре в broqch
+            broqchElement.innerHTML = br;
+        }
+        function onSilaKlik() {
+            // Добавете ограничение - можем да си купим сила само ако имаме 10 бисквити
+            console.log("SILATA TI SE UVELICHI")
+            brSila++;
+            silaBroqch.innerHTML = brSila;
+
+            silaImages.innerHTML += '<img src="cookie.png">'
+        }
+    </script>
+</head>
+<body onload="onBodyLoad()">
+    <div>
+        <h1>
+            <a href="https://google.com">Cookie Clicker</a>
+        </h1>
+        <a href="https://github.com/tatarski">Github-a на Дебелимитър</a>
+        <a href="C:\Users\dimitar\Desktop\TSA 2022- 2023\L2\16. breakout - Copy\index.html">Игра, направена от
+            дебелимитър</a>
+    </div>
+    <div>
+        <img src="cookie.png" id = "cookiekartinka">
+        <span>BR COOKIES: <span id="broqch1">0</span></span>
+    </div>
+    <div>
+        <h2>Сила на курсoра</h2>
+        <p>Колкото повече от този update си си купил - толкова повече бисквитки получаваш при клик</p>
+        <h2>BR SILA: <span id="sila_broqch">1</span></h2>
+        <h2>CENA: 10</h2>
+        <button id ="sila_buton">BUY</button>
+        <div id="sila_images">
+
+        </div>
+    </div>
+</body>
+</html>

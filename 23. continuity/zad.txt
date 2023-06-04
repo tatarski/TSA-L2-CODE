@@ -1,0 +1,46 @@
+0. Присъствие: gg60ew
+1. Допишете функциите create_tablica_za_plochka, draw_plochka
+2. Направете простото мърдане на играча с WASD
+3. Направете функциите suzdai_plochka_1, suzdai_plochka_2
+4. Създайте двумерен масив, от таблици.
+
+За да нямате 4 вложени цикъла, използвайте функциите suzdai_plochka_1 и suzdai_plochka_2 и suzdai_tablica_za_plochka, за да запълните двумерния масив.
+
+tablica_ot_plochki[i][j] = suzdai_plochka_1(10);
+
+Създаване
+let tablica_ot_plochki = [];
+for .......
+    tablica_ot_plochki[i] = [];
+    for .....
+        tablica_ot_plochki[i][j] = suzdai_plochka_1(10);
+
+Рисуване:
+for .......
+    for .....
+        narisuvai_plochka(x,y,12,tablica_ot_plochki[i][j])
+
+Домашна работа:
+1. Създайте 5 функции, които създават яки плочки, от които може да се изгради яко ниво.
+
+примерно:
+- function suzdai_plochka_diagonal
+- function suzdai_plochka_s_tunel
+- function suzdai_plochka_zapulnena
+- function suzdai_plochka_stulba
+- function suzdai_plochka_zvezda
+- function suzdai_plochka_pari
+- каквото вие си намислите
+
+2. Създайте на ръка двумерен масив от плочки:
+
+let nivo = [
+    [
+        suzdai_plochka_2(10), suzdai_plochka_1(10)
+    ],
+    [
+        suzdai_plochka_1(10), suzdai_plochka_2(10)
+    ]
+]
+
+3. Направете много нива - сменят се с A/D.

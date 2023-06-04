@@ -1,0 +1,19 @@
+p, h1{
+    background-color: beige;
+}
+#broqch {
+    background-color: chartreuse;
+    font-size: 40px;
+    color: red;
+}
+img {
+    height: 200px;
+}
+button {
+    width: 100px;
+    height: 50px;
+    font-size: 40px;
+}
+#sila_images *{
+    height:10px;
+}
