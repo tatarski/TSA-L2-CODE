@@ -1,1 +1,1 @@
-### Code from Telerik School Academy - Gamedev with HTML5/JS Level 2
+### Code from Telerik School Academy - Gamedev with HTML5/JS Level 2 - 2023
